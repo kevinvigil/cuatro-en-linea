@@ -26,7 +26,7 @@ class Board{
                 this.slot[fy+'-row'][fx+'-col'] = token;
                 this.slotX.push(fx);
                 fx += diferenciaX;
-            } 
+            }   
             this.slotY.push(fy);
             fy += diferenciaY;           
         }

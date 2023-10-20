@@ -3,7 +3,7 @@ class Game{
         this.canvas = canvas;
         this.context = canvas.getContext('2d');
         this.board = new Board(this.context);
-        this.player1 = new Player (this.context, 'Jugador 1', 1);
+        this.player1 = new Player(this.context, 'Jugador 1', 1);
         this.player2 = new Player (this.context, 'Jugador 2', 2);
         this.tokens = [];
         this.turn = 1;

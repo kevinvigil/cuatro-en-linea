@@ -8,6 +8,7 @@ class Boards {
 
         this.context = context;
         this.initSlot()
+        this.drawBoard()
         
     }
 

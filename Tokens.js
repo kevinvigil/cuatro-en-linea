@@ -1,5 +1,5 @@
 class tokens {
-    constructor(x, y, param, player){
+    constructor(x, y, img, player){
         this.x = x;
         this.y = y;
         this.radio = 25;
@@ -7,22 +7,22 @@ class tokens {
         this.status = '';
         this.highlighted = false;
         this.image = new Image();
-        this.getTokekImage(param)
+        // this.getTokekImage(img)
     }
 
-    getTokekImage(param) {
-        if(param === 'p1')
-            this.image.src = './images/ficha1.png';
-        else if (param === 'p2')
-            this.image.src = 'images/ficha2.png';
-        else if (param === 'empty')
-            this.image.src = './images/ficha-vacia.png';
-    }
+    // getTokekImage(param) {
+    //     if(param === 'p1')
+    //         this.image.src = './images/ficha1.png';
+    //     else if (param === 'p2')
+    //         this.image.src = 'images/ficha2.png';
+    //     else if (param === 'empty')
+    //         this.image.src = './images/ficha-vacia.png';
+    // }
 
     setContext(context){
         this.context = context;
     }
-    
+
     draw(){
         this.context.beginPath();
         this.context.arc(this.x, this.y, this.radio, 0, Math.PI*2);

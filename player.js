@@ -1,4 +1,4 @@
-class Player {
+class Players {
     constructor(context, name, playerNumber){
         this.context = context;
         this.name = name;

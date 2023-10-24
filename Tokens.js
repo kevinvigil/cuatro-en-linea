@@ -7,17 +7,17 @@ class tokens {
         this.status = '';
         this.highlighted = false;
         this.image = new Image();
-        // this.getTokekImage(img)
+        this.getTokekImage(img)
     }
 
-    // getTokekImage(param) {
-    //     if(param === 'p1')
-    //         this.image.src = './images/ficha1.png';
-    //     else if (param === 'p2')
-    //         this.image.src = 'images/ficha2.png';
-    //     else if (param === 'empty')
-    //         this.image.src = './images/ficha-vacia.png';
-    // }
+    getTokekImage(param) {
+        if(param === 'p1')
+            this.image.src = 'images\ficha1.png';
+        else if (param === 'p2')
+            this.image.src = 'images\ficha2.png';
+        else if (param === 'empty')
+            this.image.src = 'images\ficha-vacia.png';
+    }
 
     setContext(context){
         this.context = context;

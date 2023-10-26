@@ -52,7 +52,7 @@ class Board{
     } 
 
     searchSlot(x, currentToken) {
-        for(let i = 0; i < 7; i++) {
+        for(let i = 0; i < this.slotX.length; i++) {
             if (this.slotX[i] > x - 25 && this.slotX[i] < x + 25){
                 return this.insertToken(this.slotX[i], currentToken);
             }                    
